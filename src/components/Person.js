@@ -17,7 +17,7 @@ class Person extends Component {
 
     submitHandle = (e) => {
         e.preventDefault();
-        const dd = axios.post('http://localhost:3000/person', this.state)
+        const dd = axios.post('https://server-adarbeh.herokuapp.com/person', this.state)
             .then(response => {
                 console.log(response.data)
                 return response.data
